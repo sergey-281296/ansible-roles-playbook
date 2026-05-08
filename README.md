@@ -3,16 +3,18 @@
 ## Результат выполнения
 
 ### Первый запуск
-![Первый запуск](screenshots/01-playbook-run.png)
+![](screenshots/01-playbook-run.png)
 
 ### Проверка идемпотентности
-![Идемпотентность](screenshots/02-playbook-idempotence.png)
+![](screenshots/02-playbook-idempotence.png)
 
 ## Запуск
-```bash
-ansible-galaxy install -r requirements.yml
-ansible-playbook -i inventory/prod.yml site.yml
-Репозитории с ролями
-vector-role
 
-lighthouse-role
+    ansible-galaxy install -r requirements.yml
+    ansible-playbook -i inventory/prod.yml site.yml
+
+## Репозитории с ролями
+
+https://github.com/sergey-281296/vector-role
+
+https://github.com/sergey-281296/lighthouse-role
